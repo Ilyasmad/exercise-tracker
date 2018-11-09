@@ -5,7 +5,7 @@ const shortid = require('shortid')
 const cors = require('cors')
 
 const mongoose = require('mongoose')
-mongoose.connect(process.env.MONGO_URI || 'mongodb://airoose:database123@ds145113.mlab.com:45113/mydatabase' )
+mongoose.connect(process.env.MONGO_URI)
 
 app.use(cors())
 
